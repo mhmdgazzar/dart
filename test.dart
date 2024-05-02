@@ -1,14 +1,13 @@
-void main() {
-// Map
-  Map favoritPizza = {
-    "Dani": "Margherita",
-    "Peter": "Pepperoni",
-    "Jane": "Hawaiian",
-  };
-
-  print(favoritPizza);
-  print(favoritPizza["Dani"]);
-  print(favoritPizza.length);
-  favoritPizza["koko"] = "BBQ";
-  print(favoritPizza.length);
+void userLogin(String userName, String userPassword) {
+  bool isUserNameInDatabase = checkIfUserNameInDatabase();
+  if (isUserNameInDatabase) {
+    String savedPasswort = getPasswordForUserName(userName);
+    if (userPassword == savedPasswort) {
+      print("Erfolgreich eingeloggt!");
+    } else {
+      print("Leider stimmt das Passwort nicht überein!");
+    }
+  } else {
+    print("Nutzer existiert nicht!");
+  }
 }
