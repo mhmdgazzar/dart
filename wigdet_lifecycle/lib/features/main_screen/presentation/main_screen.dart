@@ -54,6 +54,11 @@ class _MainScreenState extends State<MainScreen> {
   void dispose() {
     // TODO: implement dispose
     print(".... Dispose ....");
+    setState(() {
+      print('.... Dispose called ....');
+      x = 0;
+      print('x auf 0 gesetzt');
+    });
     super.dispose();
   }
 }
