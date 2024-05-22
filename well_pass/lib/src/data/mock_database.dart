@@ -1,8 +1,7 @@
-import '../features/enums/body_type.dart';
-import '../features/enums/countries.dart';
-import '../features/enums/gender.dart';
-import '../features/home/domain/user.dart';
+import '../features/main_screen/domain/user.dart';
+import '../features/wallet/domain/body_type.dart';
 import '../features/wallet/domain/connection.dart';
+import '../features/wallet/domain/gender.dart';
 import '../features/wallet/domain/wallet.dart';
 import 'database_repository.dart';
 
@@ -19,21 +18,21 @@ User user1 = User(
 Wallet userWallet = Wallet(
   user: user1,
   connections: [],
-  walletID: '1',
+  walletID: '7676465MFDFG546',
   photoUrl: '',
-  gender: Gender.Other,
-  country: Country.DE,
-  city: '',
-  dateOfBirth: DateTime(1990, 1, 1),
+  gender: Gender.male,
+  country: 'Germany',
+  city: 'Berlin',
+  dateOfBirth: DateTime(1990, 01, 01),
   bodyWeight: 0,
   bodyHeight: 0,
-  bodyType: BodyType.Ectomorph,
+  bodyType: BodyType.ectomorph,
   hasDiabetes: false,
   hasHypertension: false,
   hasAlzheimer: false,
   qrCode: '',
-  firstName: '',
-  lastName: '',
+  firstName: 'Martin',
+  lastName: 'Müller',
 );
 
 class MockDatabase implements DatabaseRepository {

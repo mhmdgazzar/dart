@@ -1,8 +1,7 @@
-import '../../enums/body_type.dart';
-import '../../enums/countries.dart';
-import '../../enums/gender.dart';
-import '../../home/domain/user.dart';
+import '../../main_screen/domain/user.dart';
+import 'body_type.dart';
 import 'connection.dart';
+import 'gender.dart';
 
 class Wallet {
   User user;
@@ -12,7 +11,7 @@ class Wallet {
   final String? walletID;
   String? photoUrl;
   Gender? gender;
-  Country? country;
+  String? country;
   String? city;
   DateTime? dateOfBirth;
   num? bodyWeight;
