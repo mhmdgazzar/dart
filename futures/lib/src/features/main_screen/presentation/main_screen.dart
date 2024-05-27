@@ -29,9 +29,9 @@ class _MainScreenState extends State<MainScreen> {
             ),
             const SizedBox(height: 24),
             ElevatedButton(
-              onPressed: () {
-                setState(() async {
-                  await Future.delayed(const Duration(seconds: 2));
+              onPressed: () async {
+                await Future.delayed(const Duration(seconds: 2));
+                setState(() {
                   delayedButton();
                 });
               },
