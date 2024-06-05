@@ -53,6 +53,17 @@ class _MainScreenState extends State<MainScreen> {
                       color: Colors.grey,
                       borderRadius: BorderRadius.all(Radius.circular(16)),
                     ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const TextField(),
+                        const SizedBox(width: 8),
+                        IconButton(
+                          onPressed: () {},
+                          icon: const Icon(Icons.add),
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
