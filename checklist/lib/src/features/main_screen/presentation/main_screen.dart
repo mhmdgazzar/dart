@@ -35,10 +35,7 @@ class _MainScreenState extends State<MainScreen> {
                           title: const Text('Titles'),
                           trailing: IconButton(
                             icon: const Icon(Icons.info),
-                            onPressed: () {
-                              debugPrint(
-                                  'Info button pressed for Item ${index + 1}');
-                            },
+                            onPressed: () {},
                           ),
                         );
                       },
