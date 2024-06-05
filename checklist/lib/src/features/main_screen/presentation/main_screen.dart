@@ -32,7 +32,7 @@ class _MainScreenState extends State<MainScreen> {
                       itemCount: 5,
                       itemBuilder: (context, index) {
                         return ListTile(
-                          title: Text('Item ${index + 1}'),
+                          title: const Text('Titles'),
                           trailing: IconButton(
                             icon: const Icon(Icons.info),
                             onPressed: () {
