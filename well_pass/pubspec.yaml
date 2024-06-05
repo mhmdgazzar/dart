@@ -24,6 +24,8 @@ flutter:
 
 assets:
 - assets/
+- assets/WellPass-Logo.png
+- assets/wellpass.png
 
 flutter_launcher_icons:
   android: "launcher_icon"
